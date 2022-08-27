@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -243,16 +244,16 @@
   background-color: $bg;
   padding: 30px 0 24px;
   position: relative;
-  
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      bottom: 77px;
-      width: 100%;
-      height: 1px;
-      background-color: #fff;
-    }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 77px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+  }
 
   &__logo {
     display: inline-block;
@@ -397,6 +398,68 @@
 
 
 }
+
+
+.top {
+  height: 55vh;
+
+  &__inner {}
+
+  &__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 142px 60px;
+    
+  }
+
+  &__item-content {
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__item-title {
+    max-width: 765px;
+    @extend %ruda-900;
+    font-size: 60px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__item-title--accent {
+    color: #CF3E3B;
+  }
+
+  &__item-text {
+    margin-bottom: 32px;
+  }
+
+  &__inner-slick-prev,
+  &__inner-slick-next {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+
+  &__inner-slick-prev {
+    left: 0;
+  }
+
+  &__inner-slick-next {
+    right: 0;
+  }
+
+}
+
+
+
+
 
 
 

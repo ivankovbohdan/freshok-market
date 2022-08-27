@@ -14,4 +14,9 @@ $(function () {
 
   });
 
+  $('.top__inner').slick({
+    prevArrow: '<button class="top__inner-slick-prev" type="button"><img class="slick-prev-img" src="images/icons/arrow-left.svg" alt="Іконка стрілочки вліво"</button>',
+    nextArrow: '<button class="top__inner-slick-next" type="button"><img class="slick-next-img" src="images/icons/arrow-right.svg" alt="Іконка стрілочки вправо"</button>'
+  })
+
 })
