@@ -160,12 +160,12 @@
   </header>
 
   <main class="main">
-
+    
   </main>
 
   <footer class="footer">
     <div class="container">
-      <a class="logo footer__logo" href="#">
+      <a class="logo" href="#">
         <img class="logo svg" src="images/logo.svg" alt="Логотип">
       </a>
 
@@ -173,12 +173,8 @@
 
         <form class="form" action="#">
           <label class="form__caption">
-            Следите за нашими акциями
-            <div class="form__input-box">
-              <input class="form__input" type="email" name="email" placeholder="email@email.com">
-              <button class="form__btn" type="submit">ПОДПИСАТЬСЯ</button>
-            </div>
-            
+            <input class="form__input" type="email" name="email" placeholder="email@email.com">
+            <button type="submit">ПОДПИСАТЬСЯ</button>
           </label>
         </form>
 
@@ -215,13 +211,13 @@
           </ul>
         </nav>
 
-        <div class="footer__contacts">
-          <div class="footer__contacts-info">
-            <a class="footer__contacts-element" href="tel:+380501112233">
-              <span class="footer__contacts-desc">Горячая линия:</span>
+        <div class="contacts">
+          <div class="contacts__info">
+            <a class="conatcts__tel" href="tel:+380501112233">
+              <span class="contacts__tel-desc"></span>
               +38 050 111 22 33
             </a>
-            <a class="footer__contacts-element" href="#">
+            <a class="conatcts__addres" href="#">
               Запорожье, ул. Т.Г. Шевченко, 1
             </a>
           </div>
@@ -249,13 +245,13 @@
         </p>
         <ul class="footer__payment-list">
           <li class="footer__payment-item">
-            <a class="footer__payment-link footer__payment-link--visa" href="#">
-              
+            <a class="footer__payment-link" href="#">
+              <img class="footer__payment-img" src="images/visa.svg" alt="">
             </a>
           </li>
           <li class="footer__payment-item">
-            <a class="footer__payment-link footer__payment-link--mc" href="#">
-              
+            <a class="footer__payment-link" href="#">
+              <img class="footer__payment-img" src="images/mastercard.svg" alt="">
             </a>
           </li>
         </ul>
