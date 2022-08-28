@@ -22,4 +22,12 @@ $(function () {
     nextArrow: '<button class="top__inner-slick-next" type="button"><img class="slick-next-img" src="images/icons/arrow-right.svg" alt="Іконка стрілочки вправо"</button>'
   })
 
+  let mixer = mixitup('.top-products__products-list');
+
+  $(".products-list__fav").on("click", function () {
+
+    $('.products-list__fav').toggleClass('products-list__fav--active');
+
+  });
+
 })

@@ -400,12 +400,8 @@
 
 }
 
-
 .top {
-  &__inner {
-    
-    
-  }
+  &__inner {}
 
   &__item {
     background-repeat: no-repeat;
@@ -459,6 +455,81 @@
 
 }
 
+.advantages {
+  padding: 48px 29px;
+  background-color: #F6F6F6;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: left top;
+    padding-left: 74px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 65px;
+  }
+
+  &__item--del {
+    background-image: url('../images/advantages/del.svg')
+  }
+
+  &__item--return {
+    background-image: url('../images/advantages/ret.svg')
+  }
+
+  &__item--sup {
+    background-image: url('../images/advantages/sup.svg')
+  }
+
+  &__title {
+    color: $title;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    max-width: 170px;
+  }
+}
+
+.top-products {
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &__btn {
+    @extend %opensans-700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3%;
+  }
+
+  &__btn:active,
+  .mixitup-control-active {
+    border-bottom: 3px solid #E0EDCF;
+  }
+
+  &__products-list{
+    margin-bottom: 48px;
+  }
+
+  &__btn-tr{
+    display: block;
+    margin: 0 auto;
+  }
+
+}
 
 
 
