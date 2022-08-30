@@ -86,8 +86,6 @@ body {
   }
 }
 
-
-
 /*--sections------------------------------*/
 .section {
   padding: 72px 0;
@@ -220,14 +218,14 @@ body {
   &__fav {
     position: absolute;
     right: 12px;
-    top: 18px;
+    top: 10px;
     z-index: 1;
     width: 44px;
     height: 44px;
     border-radius: 3px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     &:hover .products-list__fav-icon path {
       fill: $yellow-900;
