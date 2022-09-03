@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -29,7 +34,7 @@ figcaption,
 blockquote,
 dl,
 dd {
- margin: 0;
+  margin: 0;
 }
 
 ul {
@@ -48,6 +53,17 @@ select,
 address {
   font: inherit;
   border: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  margin-left: 20px;
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icons/clean-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 a {

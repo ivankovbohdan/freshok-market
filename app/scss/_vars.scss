@@ -1,8 +1,9 @@
 /*--colors------------------------------*/
 $green-hover-800: #4D800C;
 $green-hover-810: #4D810C;
-$user-nav-bg: #616161;
+$fav-nav-bg: #616161;
 $input-color: #4F4F4F;
+$fav-btn-focus: #F3DF23;
 
 $green-900: #63A60E;
 $green-200: #E0EDCF;
@@ -22,60 +23,11 @@ $black: #000;
   outline: transparent;
   border: 1px solid transparent;
   transition: border-color 1s,
-  box-shadow 1s;
+    box-shadow 1s;
   &:focus {
     border-color: $green-900;
     box-shadow: 0px 0px 0px 3px $green-200;
   }
 }
 
-/*--FONTS------------------------------*/
-%opensans-700 {
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-weight: 700;
-}
 
-%opensans-600 {
-  font-family: 'OpenSans-SemiBold', sans-serif;
-  font-weight: 600;
-}
-
-%opensans-400 {
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%opensans-300 {
-  font-family: 'OpenSans-Light', sans-serif;
-  font-weight: 300;
-}
-
-%roboto-500 {
-  font-family: 'Roboto-Medium', sans-serif;
-  font-weight: 500;
-}
-
-%roboto-400 {
-  font-family: 'Roboto-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%ruda-900 {
-  font-family: 'Ruda-Black', sans-serif;
-  font-weight: 900;
-}
-
-%ruda-700 {
-  font-family: 'Ruda-Bold', sans-serif;
-  font-weight: 700;
-}
-
-%ruda-600 {
-  font-family: 'Ruda-SemiBold', sans-serif;
-  font-weight: 600;
-}
-
-%ruda-400 {
-  font-family: 'Ruda-Regular', sans-serif;
-  font-weight: 400;
-}
