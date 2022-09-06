@@ -69,10 +69,12 @@ input[type="search"]::-webkit-search-cancel-button {
 a {
   text-decoration: none;
   color: inherit;
+  outline: transparent;
 }
 
 button {
   cursor: pointer;
   padding: 0;
   background-color: transparent;
+  outline: transparent;
 }
