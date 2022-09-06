@@ -9,7 +9,7 @@ dist/
 node_modules/
 package-lock.json
 app/css/*
-app/scss/components/banners
-app/scss/components/brands
-app/scss/components/avail-checker
-app/scss/components/news
+app/scss/components/banners.scss
+app/scss/components/brands.scss
+app/scss/components/avail-checker.scss
+app/scss/components/news.scss
