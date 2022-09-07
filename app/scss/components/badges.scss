@@ -1,6 +1,7 @@
 .badges {
-  position: absolute;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   &__item {
     display: block;
@@ -23,12 +24,10 @@
 
     &--disc {
       background-color: $red-900;
-      width: 37px;
     }
 
     &--hit {
       background-color: $orrange-900;
-      width: 34px;
     }
   }
 
