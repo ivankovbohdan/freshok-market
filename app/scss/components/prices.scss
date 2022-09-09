@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    font-weight: 600;
 
     .prices__item {
       font-size: 20px;
@@ -38,20 +39,14 @@
       }
 
       &--old {
-        position: relative;
+        font-weight: 400;
         font-size: 12px;
-        color: $silver-600;
         margin-left: 10px;
 
         &::after {
           content: '';
-          position: absolute;
           left: 0;
-          bottom: 7px;
           width: 32px;
-          height: 1px;
-          transform: rotate(-15deg);
-          background-color: $silver-600;
         }
       }
     }

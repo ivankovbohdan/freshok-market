@@ -24,6 +24,7 @@ $(function () {
   })
 
   let mixer = mixitup('.best-products');
+  let mixer2 = mixitup('.discounts');  
 
   // const animatedItem = document.querySelector('.footer__payment-item');
   // const animatedItemHeight = animatedItem.height();

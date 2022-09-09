@@ -1,4 +1,16 @@
+.rating {
+  padding-right: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  background-image: url('../images/icons/star.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
 .product-card {
+  background-color: $white;
   display: flex;
   flex-direction: column;
   max-width: 300px;
@@ -24,7 +36,7 @@
 
   /*--fav------------------------------*/
 
-  &__fav {
+  &__fav-btn {
     position: absolute;
     right: 12px;
     top: 10px;
@@ -88,6 +100,7 @@
   &__title {
     font-weight: 600;
     font-size: 14px;
+    letter-spacing: 0.03em;
     color: $dark-900;
     text-align: left;
     margin: 0 0 10px 5px;
@@ -102,42 +115,15 @@
   }
 
   &--small {
-    display: flex;
-    max-width: 300px;
+    flex-direction: row;
     min-height: 124px;
     padding: 13px 12px;
-    border: 1px solid rgba(17, 17, 17, 0.2);
-    border-radius: 6px;
-    position: relative;
-    transition: border-color 0.5s;
-
-    &:hover {
-      border-color: $green-900;
-    }
-
-    /*--badges------------------------------*/
-
-    &__badges {
-      left: 12px;
-      top: 12px;
-    }
-
-    /*--fav------------------------------*/
-
-    &__fav {
-      position: absolute;
-      right: 12px;
-      top: 10px;
-      z-index: 1;
-    }
-
-    /*--img------------------------------*/
 
     .product-card__link {
-      width: 49%;
+      margin-right: 12px;
+      width: 58%;
       height: 100px;
-      position: relative;
-      margin-bottom: 10px;
+      margin-bottom: 0;
 
       &::before {
         display: none;
@@ -149,28 +135,33 @@
       }
     }
 
-    &__link-img {
-      width: 100%;
+    .product-card__title {
+      margin: 0;
     }
-
-    /*--bottom------------------------------*/
 
     .product-card__info {
       display: flex;
       flex-direction: column;
+      width: 100%;
     }
 
-    &__title {}
-
     .product-card__bottom {
-      display: flex;
-      justify-content: space-between;
       position: relative;
     }
 
     .product-card__avail-сhecker {
       left: 0;
       bottom: 24px;
+    }
+
+    .currency {
+      font-size: 14px;
+    }
+
+    .prices__item--old {
+      .currency {
+        font-size: inherit;
+      }
     }
 
   }

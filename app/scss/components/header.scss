@@ -244,20 +244,18 @@
   }
 
   &__form {
+    display: flex;
+    justify-content: space-between;
     max-width: 576px;
     width: 100%;
     position: relative;
-  }
-
-  &__form-box {
-    display: flex;
   }
 
   &__form-input {
     font-weight: 400;
     color: $dark-800;
     padding: 15px 51px;
-    width: 73%;
+    width: 156%;
     border-radius: 6px 0 0 6px;
     background-image: url('../images/icons/search.svg');
     background-repeat: no-repeat;
