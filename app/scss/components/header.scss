@@ -160,6 +160,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   /*--header__top------------------------------*/
@@ -172,6 +173,7 @@
     padding: 14px 0;
     color: $white;
     background-color: $dark-800;
+    
   }
 
   &__contacts {

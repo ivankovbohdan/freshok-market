@@ -181,7 +181,143 @@
             </li>
           </ul>
 
+          <div class="basket">
+            <div class="basket__head">
+              <div class="basket__head-left">
+                <p class="basket__title">Корзина</p>
+                <button class="basket__clean">очистить корзину</button>
+              </div>
+              <button class="basket__close-btn close-btn">
+                <svg class="close-btn__icon" width="24" height="24">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="basket__body">
+              <li class="basket__item">
+                <article class="product-card product-card--basket">
+
+                  <button class="product-card__close-btn close-btn close-btn--small">
+                    <svg class="close-btn__icon" width="24" height="24">
+                      <use xlink:href="images/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
+
+                  <a class="product-card__link" href="#">
+                    <img class="product-card__link-img" src="images/discounts/1.jpg" alt="Ананас" width="60"
+                      height="60">
+                  </a>
+
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">
+                      Ананас, 1кг
+                    </h3>
+
+                    <div class="product-card__bottom">
+
+                      <div class="prices prices--basket">
+                        <span class="prices__item">
+                          99
+                          <span class="currency">₴</span>
+                        </span>
+                      </div>
+
+                      <div class="product-card__bottom-box">
+
+                        <div class="counter">
+
+                          <input class="counter__btn counter__btn-minus" type="button" value="-">
+                          <span class="counter__value">
+                            1
+                          </span>
+                          <input class="counter__btn counter__btn-plus" type="button" value="+">
+
+                        </div>
+
+                        <span class="product-card__sum" id="product-card__sum">
+                          99
+                          <span class="currency currency--rub">₽</span>
+                        </span>
+
+                      </div>
+
+
+
+                    </div>
+                  </div>
+
+                </article>
+              </li>
+              <li class="basket__item">
+                <article class="product-card product-card--basket">
+
+                  <button class="product-card__close-btn close-btn close-btn--small">
+                    <svg class="close-btn__icon" width="24" height="24">
+                      <use xlink:href="images/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
+
+                  <a class="product-card__link" href="#">
+                    <img class="product-card__link-img" src="images/discounts/1.jpg" alt="Ананас" width="60"
+                      height="60">
+                  </a>
+
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">
+                      Ананас, 1кг
+                    </h3>
+
+                    <div class="product-card__bottom">
+
+                      <div class="prices prices--basket">
+                        <span class="prices__item">
+                          99
+                          <span class="currency">₴</span>
+                        </span>
+                      </div>
+
+                      <div class="product-card__bottom-box">
+
+                        <div class="counter">
+
+                          <input class="counter__btn counter__btn-minus" type="button" value="-">
+                          <span class="counter__value">
+                            1
+                          </span>
+                          <input class="counter__btn counter__btn-plus" type="button" value="+">
+
+                        </div>
+
+                        <span class="product-card__sum" id="product-card__sum">
+                          99
+                          <span class="currency currency--rub">₽</span>
+                        </span>
+
+                      </div>
+
+
+
+                    </div>
+                  </div>
+
+                </article>
+              </li>
+            </ul>
+            <div class="basket__bottom">
+              <div class="basket__sum">
+                <p class="basket__sum-title">Товаров на сумму</p>
+                <span class="basket__sum-value">2038
+                  <span class="currency">₽</span>
+                </span>
+              </div>
+              <button class="basket__btn btn btn--bg">Оформить заказ</button>
+            </div>
+          </div>
+
         </div>
+
+
+
       </div>
 
     </nav>
@@ -337,7 +473,7 @@
               <button class="product-card__fav-btn fav-btn" type="button">
                 <span class="sr-only">Добавить в избранное</span>
                 <svg class="fav-btn__icon" width="32" height="32">
-                  <use xlink:href="images/sprite.svg#icon-basket-btn"></use>
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
                 </svg>
               </button>
 
@@ -351,7 +487,7 @@
 
               <div class="product-card__bottom">
 
-                <div class=" prices">
+                <div class="prices">
                   <span class="prices__item prices__item--old">
                     199
                     <span class="currency">₴</span>
@@ -365,7 +501,7 @@
                 <button class="basket-btn" type="button">
                   <span class="sr-only">Открыть корзину</span>
                   <svg class="basket-btn__icon" width="32" height="31">
-                    <use xlink:href="images/sprite.svg#icon-basket-btn"></use>
+                    <use xlink:href="images/sprite.svg#basket-btn"></use>
                   </svg>
                 </button>
               </div>
@@ -1085,26 +1221,50 @@
         <h2 class="sr-only">
           Бренды с которыми мы работаем
         </h2>
-        <ul class="brands__list">
-          <li class="brands__item">
-            <img class="brands__img" src="images/brands/1.svg" alt="Логотип Sprite">
-          </li>
-          <li class="brands__item">
-            <img class="brands__img" src="images/brands/2.svg" alt="Логотип DrPepper">
-          </li>
-          <li class="brands__item">
-            <img class="brands__img" src="images/brands/3.svg" alt="Логотип CocaCola">
-          </li>
-          <li class="brands__item">
-            <img class="brands__img" src="images/brands/4.svg" alt="Логотип Pepsi">
-          </li>
-          <li class="brands__item">
-            <img class="brands__img" src="images/brands/5.svg" alt="Логотип Red Bull">
-          </li>
-          <li class="brands__item">
-            <img class="brands__img" src="images/brands/6.svg" alt="Логотип Fanta">
-          </li>
-        </ul>
+        <div class="brands__inner">
+          <ul class="brands__list">
+            <li class="brands__item">
+              <a class="brands__link" href="#">
+                <img class="brands__img" src="images/brands/1.svg" alt="Логотип Sprite">
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="#">
+                <img class="brands__img" src="images/brands/2.svg" alt="Логотип DrPepper">
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="#">
+                <img class="brands__img" src="images/brands/3.svg" alt="Логотип CocaCola">
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="#">
+                <img class="brands__img" src="images/brands/4.svg" alt="Логотип Pepsi">
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="#">
+                <img class="brands__img" src="images/brands/5.svg" alt="Логотип Red Bull">
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="#">
+                <img class="brands__img" src="images/brands/6.svg" alt="Логотип Fanta">
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="#">
+                <img class="brands__img" src="images/brands/1.svg" alt="Логотип Sprite">
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link" href="#">
+                <img class="brands__img" src="images/brands/1.svg" alt="Логотип Sprite">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

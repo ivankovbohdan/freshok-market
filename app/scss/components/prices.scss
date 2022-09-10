@@ -30,6 +30,7 @@
     flex-direction: row-reverse;
     align-items: flex-end;
     font-weight: 600;
+    line-height: 1;
 
     .prices__item {
       font-size: 20px;
@@ -52,4 +53,12 @@
     }
 
   }
+
+  &--basket {
+    .prices__item {
+      font-size: 20px;
+    }
+  }
+
+  
 }

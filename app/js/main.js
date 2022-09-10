@@ -23,8 +23,14 @@ $(function () {
     infinite: false
   })
 
+  $('.brands__list').slick({
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 6
+  })
+
   let mixer = mixitup('.best-products');
-  let mixer2 = mixitup('.discounts');  
+  let mixer2 = mixitup('.discounts');
 
   // const animatedItem = document.querySelector('.footer__payment-item');
   // const animatedItemHeight = animatedItem.height();
@@ -72,4 +78,42 @@ catalogList.addEventListener('click', function (event) {
 
 });
 
-/**/
+/*BASKET*/
+
+const basketBtn = document.querySelector('.basket-btn'),
+  basket = document.querySelector('.basket'),
+  basketCloseBtn = document.querySelector('.basket__close-btn');
+
+basketBtn.addEventListener('click', function () {
+  basket.classList.add('basket--active');;
+});
+
+basketCloseBtn.addEventListener('click', function () {
+  basket.classList.remove('basket--active');;
+});
+
+/*COUNTER*/
+
+let counterBtnPlus = document.querySelector(".counter__btn-plus");
+let counterBtnMinus = document.querySelector(".counter__btn-minus");
+let counterValue = document.querySelector(".counter__value");
+let total = document.querySelector(".product-card__sum");
+let number = 1;
+let price = document.querySelector(".prices__item").textContent;
+let currencуRub = document.querySelector(".currency--rub");
+
+counterBtnPlus.addEventListener('click', function () {
+  if (number <= 98) {
+    number++;
+    counterValue.innerHTML = number;
+    total.textContent = number * parseInt(price) + currencуRub.textContent;
+  }
+});
+
+counterBtnMinus.addEventListener('click', function () {
+  if (number >= 2) {
+    number--;
+    counterValue.innerHTML = number;
+    total.innerHTML = number * parseInt(price) + currencуRub.textContent;
+  }
+});

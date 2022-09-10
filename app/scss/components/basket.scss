@@ -1,0 +1,138 @@
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  transition: box-shadow 0.5s,
+    background-color 0.5s;
+
+  .close-btn__icon {
+    transition: fill 0.2s;
+  }
+
+  &:hover {
+    background-color: $green-100;
+
+    .close-btn__icon {
+      fill: $green-900;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 3px #E0EDCF;
+    background-color: rgba(255, 255, 255, 0.0001);
+
+    .close-btn__icon {
+      fill: $black;
+    }
+  }
+
+  &:active {
+    background-color: #C1C1C14D;
+
+    .close-btn__icon {
+      fill: $black;
+    }
+  }
+
+  &--small {
+    width: 24px;
+    height: 24px;
+
+    .close-btn__icon {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.basket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 475px;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: -138%;
+  transform: translateY(-1000%);
+  transition: transform 1s;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 26px 11px 24px;
+    background-color: $white;
+  }
+
+  &__head-left {
+    color: $black;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  &__clean {
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  &__body {
+    padding: 12px;
+    flex-grow: 1;
+    background-color: $silver-100;
+    overflow-y: scroll;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__bottom {
+
+  }
+
+  &__sum {
+    padding: 24px 12px 23px 24px;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sum-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $black;
+  }
+
+  &__sum-value {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+
+    .currency {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 26px;
+  }
+
+  &--active {
+    transform: translateY(0);
+  }
+
+}
