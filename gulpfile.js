@@ -9,6 +9,7 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const cheerio = require('gulp-cheerio');
 const svgSprite = require('gulp-svg-sprite');
+const fileInclude = require('gulp-file-include');
 
 
 
@@ -38,6 +39,7 @@ function scripts() {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/rateyo/src/jquery.rateyo.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -98,11 +100,22 @@ function cleanDist() {
   return del('dist')
 }
 
+const htmlInclude = () => {
+  return src(['app/html/pages/*.html'])											
+    .pipe(fileInclude({
+      prefix: '@@',
+      basepath: '@file',
+    }))
+    .pipe(dest('app'))
+    .pipe(browserSync.stream());
+}
+
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/images/icons/*.svg'], svgSprites);
-  watch(['app/**/*.html']).on('change', browserSync.reload);
+  watch(['app/html/**/*.html'], htmlInclude);
+  // watch(['app/images/icons/*.svg'], svgSprites);
+  // watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
 
@@ -113,6 +126,7 @@ exports.watching = watching;
 exports.images = images;
 exports.svgSprites = svgSprites;
 exports.cleanDist = cleanDist;
+exports.htmlInclude = htmlInclude;
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(svgSprites, styles, scripts, browsersync, watching)
+exports.default = parallel(svgSprites, styles, scripts, browsersync, watching, htmlInclude);

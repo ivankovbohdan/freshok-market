@@ -1,0 +1,93 @@
+.banner {
+  min-width: 300px;
+  min-height: 300px;
+  height: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__uptitle {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+  }
+
+  &__title {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    max-width: 70%;
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 1;
+    border-bottom: 2px solid $dark-500;
+    transition: opacity 0.2s,
+      box-shadow 0.5s,
+      border-color 0.5s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 3px $dark-500;
+      border-radius: 3px;
+      border-color: transparent;
+      opacity: 100%;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+  }
+
+  &--big {
+    min-width: 630px;
+  }
+
+  &--light {
+    color: $white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+
+    .banner__link {
+      border-bottom: 2px solid $white;
+
+      &:focus {
+        box-shadow: 0px 0px 0px 3px $white;
+        border-color: transparent;
+      }
+    }
+
+  }
+
+}
+
+.banners {
+  text-align: left;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__item {
+    flex-basis: 20%;
+    margin: 15px;
+  }
+
+}

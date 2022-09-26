@@ -1,3 +1,21 @@
+.logo {
+  transition: box-shadow 0.5s,
+    opacity 0.5s;
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 3px $green-100;
+    border-radius: 3px;
+  }
+
+  &:active {
+    opacity: 20%;
+  }
+}
+
 .catalog {
   position: relative;
 
@@ -9,6 +27,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    transition: box-shadow 1s;
 
     &::before {
       content: '';
@@ -34,6 +53,11 @@
       background-position: center;
     }
 
+    &:focus {
+      box-shadow: 0px 0px 0px 3px $green-100;
+      border-radius: 3px;
+    }
+
     &--active {
       border-radius: 6px 6px 0 0;
       transition: background-color 0.5s;
@@ -46,6 +70,7 @@
   }
 
   &__list {
+    height: 600px;
     z-index: 5;
     position: absolute;
     top: 50px;
@@ -54,11 +79,14 @@
     display: none;
 
     &--active {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
   }
 
   &__item {
+    width: 100%;
     border: 1px solid #C1C1C14D;
     background-color: $white;
     transition: border 0.5s;
@@ -67,7 +95,7 @@
       border-left: 3px solid $green-900;
     }
 
-    &:last-child {
+    &:nth-child(12n+12) {
       border-radius: 0 0 6px 6px;
     }
   }
@@ -76,7 +104,7 @@
     color: $black;
     line-height: 1.2;
     display: block;
-    padding: 17px 24px;
+    padding: 15px 24px;
     transition: color 0.5s,
       box-shadow 0.5s;
 
@@ -173,12 +201,11 @@
     padding: 14px 0;
     color: $white;
     background-color: $dark-800;
-    
+
   }
 
   &__contacts {
     display: flex;
-
   }
 
   &__contacts-item {
@@ -197,10 +224,16 @@
     display: flex;
     align-items: flex-end;
     transition: opacity 1s,
-      color 1s;
+      color 1s,
+      box-shadow 1s;
 
     &:hover {
       opacity: 0.7;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 3px $green-100;
+      border-radius: 3px;
     }
 
     &:active {
@@ -213,7 +246,7 @@
     }
   }
 
-  &__contacts-icon{
+  &__contacts-icon {
     fill: $white;
   }
 
@@ -228,11 +261,22 @@
   }
 
   &__menu-link {
-    transition: box-shadow 1s;
     border-radius: 3px;
+    transition: box-shadow 1s,
+      opacity 0.5s,
+      color 0.5s;
+
+
+    &:hover {
+      opacity: 0.7;
+    }
 
     &:focus {
       box-shadow: 0px 0px 0px 3px $green-100;
+    }
+
+    &:active {
+      color: $green-200;
     }
   }
 

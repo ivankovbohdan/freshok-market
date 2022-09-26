@@ -3,22 +3,20 @@
 @import 'vars';
 @import 'libs';
 @import 'global';
-@import 'components/btn';
-@import 'components/icons-btn';
-@import 'components/avail-checker';
-@import 'components/badges';
-@import 'components/prices';
+@import 'components/header';
+
+@import 'components/btns';
 @import 'components/basket';
-@import 'components/counter';
-@import 'components/products-nav';
 @import 'components/product-card';
 @import 'components/socials';
-@import 'components/header';
-@import 'components/hero';
-@import 'components/best-products';
-@import 'components/advantages';
-@import 'components/banners';
-@import 'components/discounts';
-@import 'components/brands';
-@import 'components/news';
+
+
+@import 'components/sections/hero';
+@import 'components/sections/best-products';
+@import 'components/sections/advantages';
+@import 'components/sections/banners';
+@import 'components/sections/discounts';
+@import 'components/sections/brands';
+@import 'components/sections/news';
+
 @import 'components/footer';

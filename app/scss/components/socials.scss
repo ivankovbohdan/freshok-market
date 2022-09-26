@@ -1,9 +1,12 @@
 .social {
+  max-width: 220px;
   display: flex;
+  flex-wrap: wrap;
 
   &__item {
+    margin: 6px 0;
     &:not(:last-child) {
-      margin-right: 11px;
+      margin-right: 12px;
     }
   }
 
