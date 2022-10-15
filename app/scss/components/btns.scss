@@ -1,3 +1,44 @@
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  transition: background-color 0.5s,
+    box-shadow 0.5s,
+    opacity 0.5s;
+
+  &__icon {
+    fill: $white;
+    transition: opacity 0.5s,
+      fill 0.5s;
+  }
+
+  &:hover {
+    background-color: $fav-nav-bg;
+  }
+
+  &:focus {
+    box-shadow: inset 0px 0px 0px 3px $green-100;
+    background-color: $fav-nav-bg;
+  }
+
+  &:active {
+    background-color: $fav-nav-bg;
+
+    .user-btn__icon {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 44px;
+    height: 44px;
+  }
+
+}
+
 .user-btn {
   display: flex;
   justify-content: center;
@@ -39,7 +80,6 @@
 }
 
 .fav-btn {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +124,11 @@
 
     .fav-btn__icon {
       fill: $white;
+
+      @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &:hover {
@@ -111,6 +156,13 @@
         fill: $white;
         opacity: 0.5;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &--big {
+      width: 44px;
+      height: 44px;
     }
   }
 
@@ -159,6 +211,11 @@
     .basket-btn__icon {
       width: 32px;
       height: 31px;
+
+      @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &:hover {
@@ -172,6 +229,13 @@
 
     &:active {
       background-color: $fav-nav-bg;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &--big {
+      width: 44px;
+      height: 44px;
     }
   }
 

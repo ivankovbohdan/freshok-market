@@ -9,10 +9,19 @@
   }
 
   &__item {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
+  }
 
+  &__item-img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   &__item-content {
@@ -136,5 +145,49 @@
   .hero__inner .slick-active button {
     background-color: $green-900;
     border: none;
+  }
+
+  @media (max-width: 1200px) {}
+
+  @media (max-width: 992px) {
+
+    &__container {
+      min-height: 500px;
+    }
+
+    &__item-title {
+      max-width: 700px;
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      min-height: 490px;
+    }
+
+    &__item-title {
+      font-weight: 700;
+      max-width: 420px;
+      font-size: 30px;
+    }
+
+    &__item-text {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    &__item-content{
+      width: 100vw;
+      padding: 15px;
+    }
+
+    &__item-title {
+      max-width: 320px;
+      font-size: 20px;
+    }   
   }
 }

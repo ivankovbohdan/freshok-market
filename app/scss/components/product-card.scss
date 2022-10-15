@@ -73,6 +73,11 @@
     &--hit {
       background-color: $orrange-900;
     }
+
+    &--big {
+      padding: 6px 9px;
+      font-size: 16px;
+    }
   }
 
 }
@@ -405,6 +410,7 @@
 
   &--small {
     flex-direction: row;
+    max-width: 300px;
     min-height: 124px;
     padding: 13px 12px;
   }
@@ -415,5 +421,12 @@
     min-height: 84px;
     padding: 12px 12px 14px;
   }
+
+  @media (max-width: 1200px) {
+    &--small {
+      min-width: 300px;
+    }
+  }
+
 
 }

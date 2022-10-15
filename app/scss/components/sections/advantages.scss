@@ -17,7 +17,6 @@
     &:not(:last-child) {
       margin-right: 65px;
     }
-
   }
 
   &__title {
@@ -28,4 +27,52 @@
   &__text {
     max-width: 170px;
   }
+
+  @media (max-width: 1200px) {}
+
+  @media (max-width: 992px) {
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      max-width: 341px;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin: 0 0 50px 0;
+      }
+    }
+
+    &__text {
+      max-width: 100%;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 0
+  }
+
+  @media (max-width: 576px) {
+    &__list {
+      align-items: flex-start;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin: 0 0 30px 0;
+      }
+    }
+  }
 }
+
+// @media (max-width: 1200px) {}
+
+// @media (max-width: 992px) {}
+
+// @media (max-width: 768px) {}
+
+// @media (max-width: 576px) {}

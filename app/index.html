@@ -23,7 +23,11 @@
   <nav class="header__wrapper">
 
     <div class="header__top">
-      <div class="container header__container">
+      <div class="container header__top-container">
+
+        <button class="header__burger" type="button">
+          <span class="header__burger-line"></span>
+        </button>
 
         <ul class="header__contacts">
           <li class="header__contacts-item">
@@ -31,7 +35,9 @@
               <svg class="header__contacts-icon" width="32px" height="22px">
                 <use xlink:href="images/sprite.svg#icon-del"></use>
               </svg>
-              адрес и время доставки
+              <span class="header__contacts-text">
+                адрес и время доставки
+              </span>
             </a>
           </li>
           <li class="header__contacts-item">
@@ -39,7 +45,9 @@
               <svg class="header__contacts-icon" width="32px" height="22px">
                 <use xlink:href="images/sprite.svg#icon-tel"></use>
               </svg>
-              горячая линия 24/7
+              <span class="header__contacts-text">
+                горячая линия 24/7
+              </span>
             </a>
           </li>
         </ul>
@@ -70,13 +78,22 @@
       <div class="container header__container">
 
         <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="60">
+          <picture class="logo__picture">
+            <source media="(max-width: 1200px)" srcset="images/logo--small.svg" width="36" height="40" />
+            <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="60">
+          </picture>
         </a>
 
-        <div class="catalog">
+
+        <!-- <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="60">
+        </a> -->
+
+        <div class="header__catalog catalog">
 
           <button class="catalog__btn" type="button">
-            Каталог продуктов
+            <span class="catalog__btn-main">Каталог продуктов</span>
+            <span class="catalog__btn-small">Каталог</span>
           </button>
           <ul class="catalog__list">
             <li class="catalog__item">
@@ -214,7 +231,15 @@
         </form>
 
         <ul class="user-nav">
-          <li class="user-nav__item">
+          <li class="user-nav__item user-nav__item--search">
+            <button class="search-btn" type="button">
+              <span class="sr-only">Открыть поле поиска товаров</span>
+              <svg class="search-btn__icon" width="24" height="24">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="user-nav__item user-nav__item--user">
             <button class="user-btn user-btn--base" type="button">
               <span class="sr-only">Открыть личный кабинет</span>
               <svg class="user-btn__icon" width="25" height="32">
@@ -245,7 +270,7 @@
       </div>
 
     </div>
-    
+
     <div class="overlay"></div>
 
     <div class="basket">
@@ -392,6 +417,256 @@
       </div>
     </div>
 
+    <div class="side-menu">
+
+      <div class="side-menu__top">
+
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo--green.svg" alt="Логотип" width="200" height="60">
+        </a>
+
+        <button class="side-menu__close-btn close-btn" type="button">
+          <svg class="close-btn__icon" width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+      </div>
+
+      <ul class="side-menu__user-block user-block">
+        <button class="user-block__btn">Вход</button>
+        <button class="user-block__btn">Регистрация</button>
+      </ul>
+
+      <div class="catalog">
+
+        <button class="catalog__btn catalog__btn--side" type="button">
+          <span class="catalog__btn-main">Каталог продуктов</span>
+          <span class="catalog__btn-small">Каталог</span>
+        </button>
+        <ul class="catalog__list catalog__list--side">
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Овощи и фрукты
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Бакалея
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Молочные продукты
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Хлеб
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Мясо
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Колбаса
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Рыба
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Алкоголь
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Напитки
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Торты
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Мясо
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Чай, кофе
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Овощи и фрукты
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Бакалея
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Молочные продукты
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Хлеб
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Мясо
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Колбаса
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Рыба
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Алкоголь
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Напитки
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Торты
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Мясо
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              Чай, кофе
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+      <address class="side-menu__contacts">
+        <a class="side-menu__contacts-item" href="tel:+380501112233">
+          <svg class="side-menu__contacts-icon" width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-tel"></use>
+          </svg>
+          +38 050 111 22 33
+        </a>
+        <a class="side-menu__contacts-item" href="#">
+          <svg class="side-menu__contacts-icon" width="24" height="32">
+            <use xlink:href="images/sprite.svg#icon-location"></use>
+          </svg>
+          Запорожье, ул. Т.Г. Шевченко, 1
+        </a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="sr-only">Перейти в фейсбук</span>
+              <svg class="social__link-icon" width="33" height="32">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="sr-only">Перейти в ютуб</span>
+              <svg class="social__link-icon" width="32" height="32">
+                <use xlink:href="images/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="sr-only">Перейти в телеграмм</span>
+              <svg class="social__link-icon" width="33" height="32">
+                <use xlink:href="images/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="sr-only">Перейти в инстаграмм</span>
+              <svg class="social__link-icon" width="32" height="32">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <ul class="side-menu__list">
+
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">
+            Доставка
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">
+            О нас
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">
+            Новости
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">
+            Контакты
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">
+            Акции
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">
+            Вакансии
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">
+            Отзывы
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a class="side-menu__link" href="#">
+            Публичная оферта
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
   </nav>
 </header>
   <main class="main">
@@ -401,7 +676,11 @@
   </h1>
   <div class="hero__inner">
 
-    <div class="hero__item" style="background-image: url('images/hero/1.jpg');">
+    <div class="hero__item">
+      <picture class="hero__item-picture">
+        <source media="(max-width: 576px)" srcset="images/hero/1--small.jpg" width="375" height="320" />
+        <img class="hero__item-img" src="images/hero/1.jpg" alt="Морковь" width="1920" height="600">
+      </picture>
       <div class="container hero__container">
 
         <div class="hero__item-content">
@@ -420,7 +699,11 @@
       </div>
     </div>
 
-    <div class="hero__item" style="background-image: url('images/hero/2.jpg');">
+    <div class="hero__item">
+      <picture class="hero__item-picture">
+        <!-- <source media="(max-width: 576px)" srcset="images/hero/2--small.jpg" width="375" height="320" /> -->
+        <img class="hero__item-img" src="images/hero/2.jpg" alt="Помидоры" width="1920" height="600">
+      </picture>
       <div class="container hero__container">
         <div class="hero__item-content">
           <p class="hero__item-title">
@@ -438,7 +721,11 @@
       </div>
     </div>
 
-    <div class="hero__item" style="background-image: url('images/hero/3.jpg');">
+    <div class="hero__item">
+      <picture class="hero__item-picture">
+        <!-- <source media="(max-width: 576px)" srcset="images/hero/3--small.jpg" width="375" height="320" /> -->
+        <img class="hero__item-img" src="images/hero/3.jpg" alt="Зелень" width="1920" height="600">
+      </picture>
       <div class="container hero__container">
         <div class="hero__item-content">
           <p class="hero__item-title">
@@ -1637,7 +1924,7 @@
           Следите за нашими акциями
         </p>
 
-        <form class="form-subs" action="#">
+        <form class="form-subs footer__form" action="#">
 
           <label class="form-subs__box">
             <span class="sr-only">Введите gmail</span>
@@ -1680,7 +1967,7 @@
 
         <div class="footer__contacts-info">
           <a class="footer__contacts-item" href="tel:+380501112233">
-            <span class="footer__contacts-desc">Горячая линия:</span>
+            <span class="footer__contacts-desc footer__contacts-desc--phone">Горячая линия:</span>
             +38 050 111 22 33
           </a>
           <a class="footer__contacts-item" href="#">
@@ -1688,7 +1975,7 @@
           </a>
         </div>
 
-        <ul class="social">
+        <ul class="social footer__social">
           <li class="social__item">
             <a class="social__link" href="#">
               <span class="sr-only">Перейти в фейсбук</span>

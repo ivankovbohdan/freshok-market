@@ -5,6 +5,7 @@ $fav-nav-bg: #616161;
 $input-color: #4F4F4F;
 $fav-btn-focus: #F3DF23;
 $section-bg: #F5F5F5;
+$silver-bg: #C4C4C4;
 
 $green-900: #63A60E;
 $green-200: #E0EDCF;
@@ -24,10 +25,9 @@ $black: #000;
   border: 1px solid transparent;
   transition: border-color 1s,
     box-shadow 1s;
+
   &:focus {
     border-color: $green-900;
     box-shadow: 0px 0px 0px 3px $green-200;
   }
 }
-
-
