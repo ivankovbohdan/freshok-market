@@ -3,15 +3,13 @@
 
   &__list {
     display: grid;
+    justify-items: center;
+    justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
   }
 
-  &__item{
-    max-width: 300px;
-  }
-
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     &__list {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -19,10 +17,9 @@
 
   @media (max-width: 992px) {
     &__list {
-      justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
-      }
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+    }
   }
 
   @media (max-width: 768px) {

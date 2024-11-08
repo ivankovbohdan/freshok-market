@@ -148,6 +148,10 @@
       width: 24px;
       height: 23px;
     }
+
+    &--added {
+      background-color: $silver-600;
+    }
   }
 
   &__delivery-title {
@@ -269,8 +273,6 @@
   &__reviews-content {
     margin-bottom: 72px;
   }
-
-  &__form {}
 
   &__form-inner {
     display: flex;
@@ -421,8 +423,6 @@
   }
 
   @media (max-width: 576px) {
-    &__btns {}
-
     &__btns-item:not(:last-child) {
       margin-right: 20px;
     }

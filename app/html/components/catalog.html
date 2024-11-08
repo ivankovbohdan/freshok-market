@@ -3,7 +3,7 @@
     <ul class="breadcrumbs__list">
 
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="#">
+        <a class="breadcrumbs__link" href="/">
           Главная
         </a>
       </li>
@@ -23,331 +23,181 @@
   <div class="container">
     <h2 class="title catalog__title">Каталог товаров</h2>
 
-    <div class="catalog__filters-side">
-
-      <button class="catalog__close-btn close-btn" type="button">
-        <svg class="close-btn__icon" width="24" height="24">
-          <use xlink:href="images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-
-      <div class="catalog__filter filter">
-        <button class="filter__btn" type="button">
-          Категории
-          <svg class="filter__btn-icon" width="11" height="18">
-            <use xlink:href="images/sprite.svg#filter-arrow"></use>
-          </svg>
-        </button>
-        <ul class="filter__list">
-          <li class="filter__item">
-            <a class="filter__link">
-              Овощи и фрукты
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Бакалея
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Молочные продукты
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Хлеб
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Мясо
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Колбаса
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Мясо
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Колбаса
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Мясо
-            </a>
-          </li>
-          <li class="filter__item">
-            <a class="filter__link">
-              Колбаса
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="catalog__filter filter">
-        <button class="filter__btn" type="button">
-          Предложения
-          <svg class="filter__btn-icon" width="11" height="18">
-            <use xlink:href="images/sprite.svg#filter-arrow"></use>
-          </svg>
-        </button>
-        <form class="filter__form" action="#">
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора товара со скидкой</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">Со скидкой</span>
-          </label>
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора новинок</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">Новинка</span>
-          </label>
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора хитов</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">Хит</span>
-          </label>
-
-        </form>
-      </div>
-
-      <div class="catalog__filter filter">
-        <button class="filter__btn" type="button">
-          Бренд
-          <svg class="filter__btn-icon" width="11" height="18">
-            <use xlink:href="images/sprite.svg#filter-arrow"></use>
-          </svg>
-        </button>
-
-        <form class="filter__form" action="#">
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора товара CocaCola</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">CocaCola</span>
-          </label>
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора товара Pepsi</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">Pepsi</span>
-          </label>
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора товара Sprite</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">Sprite</span>
-          </label>
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора товара Fanta</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">Fanta</span>
-          </label>
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора товара RedBull</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">RedBull</span>
-          </label>
-
-          <label class="filter__form-label">
-            <span class="sr-only">Фильтр выбора товара Dr Pepper</span>
-            <input class="filter__form-input" type="checkbox">
-            <span class="filter__form-text">Dr Pepper</span>
-          </label>
-
-        </form>
-      </div>
-
-      <div class="catalog__filter filter">
-        <button class="filter__btn" type="button">
-          Цена
-          <svg class="filter__btn-icon" width="11" height="18">
-            <use xlink:href="images/sprite.svg#filter-arrow"></use>
-          </svg>
-        </button>
-        <form class="filter__form filter__form--price" action="#">
-          <span class="sr-only">фильтр выбора диапазона цены товара</span>
-          <span class="filter__form-box">
-            <span class="filter__form-from" tabindex="0">100</span>
-            <span class="filter__form-to" tabindex="0">1000</span>
-          </span>
-          <input class="filter__form-price" type="text" data-min="0" data-max="1100" data-from="100" data-to="1000">
-        </form>
-      </div>
-
-    </div>
-
     <div class="catalog__inner">
 
       <div class="catalog__filters">
 
-        <div class="catalog__filter filter">
-          <button class="filter__btn" type="button">
+        <button class="catalog__filter-close" type="button">
+          <svg class="close-btn__icon" width="18" height="18">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="catalog-filter">
+          <button class="filter-btn" type="button">
             Категории
-            <svg class="filter__btn-icon" width="11" height="18">
+            <svg class="filter-btn__icon" width="11" height="18">
               <use xlink:href="images/sprite.svg#filter-arrow"></use>
             </svg>
           </button>
-          <ul class="filter__list">
-            <li class="filter__item">
-              <a class="filter__link">
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Овощи и фрукты
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Бакалея
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Молочные продукты
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Хлеб
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Мясо
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Колбаса
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Мясо
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Колбаса
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Мясо
               </a>
             </li>
-            <li class="filter__item">
-              <a class="filter__link">
+            <li class="catalog-filter__item">
+              <a class="catalog-filter__link">
                 Колбаса
               </a>
             </li>
           </ul>
         </div>
 
-        <div class="catalog__filter filter">
-          <button class="filter__btn" type="button">
+        <div class="catalog-filter">
+          <button class="filter-btn" type="button">
             Предложения
-            <svg class="filter__btn-icon" width="11" height="18">
+            <svg class="filter-btn__icon" width="11" height="18">
               <use xlink:href="images/sprite.svg#filter-arrow"></use>
             </svg>
           </button>
-          <form class="filter__form" action="#">
+          <form class="catalog-filter__form" action="#">
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора товара со скидкой</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">Со скидкой</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">Со скидкой</span>
             </label>
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора новинок</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">Новинка</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">Новинка</span>
             </label>
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора хитов</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">Хит</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">Хит</span>
             </label>
 
           </form>
         </div>
 
-        <div class="catalog__filter filter">
-          <button class="filter__btn" type="button">
+        <div class="catalog-filter">
+          <button class="filter-btn" type="button">
             Бренд
-            <svg class="filter__btn-icon" width="11" height="18">
+            <svg class="filter-btn__icon" width="11" height="18">
               <use xlink:href="images/sprite.svg#filter-arrow"></use>
             </svg>
           </button>
 
-          <form class="filter__form" action="#">
+          <form class="catalog-filter__form" action="#">
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора товара CocaCola</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">CocaCola</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">CocaCola</span>
             </label>
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора товара Pepsi</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">Pepsi</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">Pepsi</span>
             </label>
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора товара Sprite</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">Sprite</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">Sprite</span>
             </label>
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора товара Fanta</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">Fanta</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">Fanta</span>
             </label>
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора товара RedBull</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">RedBull</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">RedBull</span>
             </label>
 
-            <label class="filter__form-label">
+            <label class="catalog-filter__label">
               <span class="sr-only">Фильтр выбора товара Dr Pepper</span>
-              <input class="filter__form-input" type="checkbox">
-              <span class="filter__form-text">Dr Pepper</span>
+              <input class="catalog-filter__input" type="checkbox">
+              <span class="catalog-filter__check" role="checkbox" aria-checked="false" tabindex="0"></span>
+              <span class="catalog-filter__text">Dr Pepper</span>
             </label>
 
           </form>
         </div>
 
-        <div class="catalog__filter filter">
-          <button class="filter__btn" type="button">
+        <div class="catalog-filter">
+          <button class="filter-btn" type="button">
             Цена
-            <svg class="filter__btn-icon" width="11" height="18">
+            <svg class="filter-btn__icon" width="11" height="18">
               <use xlink:href="images/sprite.svg#filter-arrow"></use>
             </svg>
           </button>
-          <form class="filter__form filter__form--price" action="#">
+
+          <form class="catalog-filter__form catalog-filter__form--price" action="#">
             <span class="sr-only">фильтр выбора диапазона цены товара</span>
-            <span class="filter__form-box">
-              <span class="filter__form-from" tabindex="0">100</span>
-              <span class="filter__form-to" tabindex="0">1000</span>
+            <span class="catalog-filter__box">
+              <span class="catalog-filter__from">100</span>
+              <span class="catalog-filter__to">1000</span>
             </span>
-            <input class="filter__form-price" type="text" data-min="0" data-max="1100" data-from="100" data-to="1000">
+            <input class="catalog-filter__price" type="text" data-min="0" data-max="1100" data-from="100" data-to="1000"
+              readonly>
           </form>
         </div>
 
@@ -357,9 +207,9 @@
 
         <div class="catalog__content-filter content-filter">
 
-          <button class="catalog__filter-btn">
-            <svg class="catalog__filter-icon" width="47" height="47">
-              <use xlink:href="images/sprite.svg#filter-btn"></use>
+          <button class="content-filter__btn content-filter__btn--filters" type="button">
+            <svg class="content__filter-icon" width="32" height="34">
+              <use xlink:href="images/sprite.svg#filters-btn"></use>
             </svg>
           </button>
 
@@ -368,11 +218,11 @@
             <label class="content-filter__label">
               <span class="sr-only">Фильтр сортировки товаров по свойствам</span>
               <select class="content-filter__sort">
-                <option class="content-filter__option" value="">По названию</option>
-                <option class="content-filter__option" value="">По популярности</option>
-                <option class="content-filter__option" value="">Сначала дешевые</option>
-                <option class="content-filter__option" value="">Сначала дорогие</option>
-                <option class="content-filter__option" value="">По алфавиту</option>
+                <option class="content-filter__option" value="По названию">По названию</option>
+                <option class="content-filter__option" value="По популярности">По популярности</option>
+                <option class="content-filter__option" value="Сначала дешевые">Сначала дешевые</option>
+                <option class="content-filter__option" value="Сначала дорогие">Сначала дорогие</option>
+                <option class="content-filter__option" value="По алфавиту">По алфавиту</option>
               </select>
             </label>
 
@@ -388,17 +238,19 @@
             </label>
           </form>
 
-          <button class="content-filter__btn content-filter__btn--list">
-            <svg class="content-filter__btn-icon" width="47" height="47">
-              <use xlink:href="images/sprite.svg#btn-view--list"></use>
+          <button class="content-filter__btn content-filter__btn--list" type="button">
+            <svg class="content-filter__btn-icon" width="35" height="35">
+              <use xlink:href="images/sprite.svg#btn-viewList"></use>
             </svg>
           </button>
 
-          <button class="content-filter__btn content-filter__btn--grid">
-            <svg class="content-filter__btn-icon" width="47" height="47">
-              <use xlink:href="images/sprite.svg#btn-view--grid"></use>
+          <button class="content-filter__btn content-filter__btn--grid content-filter__btn--active" type="button">
+            <svg class="content-filter__btn-icon" width="35" height="35">
+              <use xlink:href="images/sprite.svg#btn-viewGrid"></use>
             </svg>
           </button>
+
+
 
         </div>
 
@@ -418,7 +270,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/1.jpg" alt="Ананас" width="300" height="215">
               </a>
 
@@ -485,7 +337,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/2.jpg" alt="Лимон" width="300" height="215">
               </a>
 
@@ -552,7 +404,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/3.jpg" alt="Питахайя" width="300" height="215">
               </a>
 
@@ -615,7 +467,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/4.jpg" alt="Кетчуп" width="300" height="215">
               </a>
 
@@ -682,7 +534,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/5.jpg" alt="Морковь" width="300" height="215">
               </a>
 
@@ -749,7 +601,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/6.jpg"
                   alt="Напиток сокосодержащий Sanpellegrino Aranciata Orange" width="300" height="215">
               </a>
@@ -821,7 +673,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/7.jpg"
                   alt="Кофе с коноплей органический Caffé Salomoni" width="300" height="215">
               </a>
@@ -889,7 +741,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/8.jpg" alt="Перец оранжевый" width="300"
                   height="215">
               </a>
@@ -957,7 +809,7 @@
                 </svg>
               </button>
 
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="/product-page.html">
                 <img class="product-card__link-img" src="images/products/6.jpg"
                   alt="Напиток сокосодержащий Sanpellegrino Aranciata Orange" width="300" height="215">
               </a>
