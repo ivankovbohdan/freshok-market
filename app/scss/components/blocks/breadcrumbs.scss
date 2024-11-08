@@ -1,0 +1,50 @@
+.breadcrumbs {
+  padding: 8px 0;
+  background-color: $silver-100;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 18px;
+    color: $dark-500;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 10px;
+      top: 22px;
+      right: -11px;
+      background-image: url("../images/icons/arrow-right-breadcrumbs.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      color: $green-900;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 16px 0;
+    color: inherit;
+  }
+
+  @media (max-width: 1200px) {
+    &__list {
+      flex-wrap: wrap;
+      max-width: 257px;
+    }
+  }
+}

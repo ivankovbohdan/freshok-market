@@ -1,55 +1,3 @@
-.breadcrumbs {
-  padding: 8px 0;
-  background-color: $silver-100;
-
-  &__list {
-    display: flex;
-    align-items: center;
-  }
-
-  &__item {
-    position: relative;
-    margin-right: 18px;
-    color: $dark-500;
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      height: 10px;
-      top: 22px;
-      right: -11px;
-      background-image: url('../images/icons/arrow-right.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    &:last-child {
-      margin-right: 0;
-      color: $green-900;
-
-      &::after {
-        display: none;
-
-      }
-    }
-  }
-
-  &__link {
-    display: block;
-    padding: 16px 0;
-    color: inherit;
-  }
-
-  @media (max-width: 1200px) {
-    &__list {
-      flex-wrap: wrap;
-      max-width: 257px;
-    }
-  }
-}
-
 .filter-btn {
   padding: 18px 208px 18px 18px;
   font-size: 24px;
@@ -89,13 +37,13 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 15px;
       top: 20px;
       width: 6px;
       height: 11px;
-      background-image: url('../../images/icons/arrow-down-selector.svg');
+      background-image: url("../../images/icons/arrow-down-selector.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -108,7 +56,7 @@
     padding: 15px 45px 15px 11px;
     font-size: 14px;
     line-height: 1.2;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     color: $dark-900;
     border: 1px solid $silver-600;
     border-radius: 6px;
@@ -126,8 +74,7 @@
     padding: 6px;
     background-color: $silver-100;
     border: 1px solid transparent;
-    transition: border-color 0.5s,
-                box-shadow 0.5s;
+    transition: border-color 0.5s, box-shadow 0.5s;
 
     &:not(:last-child) {
       margin-right: 15px;
@@ -152,12 +99,13 @@
     &--active {
       fill: $green-900;
     }
-
   }
 
-  @media (max-width: 1200px) {}
+  @media (max-width: 1200px) {
+  }
 
-  @media (max-width: 992px) {}
+  @media (max-width: 992px) {
+  }
 
   @media (max-width: 768px) {
     justify-content: flex-start;
@@ -176,7 +124,8 @@
     }
   }
 
-  @media (max-width: 576px) {}
+  @media (max-width: 576px) {
+  }
 }
 
 .catalog-filter {
@@ -265,7 +214,7 @@
     position: relative;
   }
 
-  &__input:checked+.catalog-filter__check {
+  &__input:checked + .catalog-filter__check {
     border-color: $dark-500;
 
     &::after {
@@ -304,7 +253,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 1;
-    color: $dark-500 ;
+    color: $dark-500;
     background-color: $silver-100;
     border: 1px solid $silver-600;
     border-radius: 3px;
@@ -345,7 +294,6 @@
       transform: translateY(-50%);
       right: -16px;
     }
-
   }
 
   .irs--flat .irs-line {
@@ -384,7 +332,6 @@
 }
 
 .catalog {
-
   &__prod-list {
     display: none;
     grid-gap: 30px;
@@ -463,7 +410,6 @@
 
   @media (max-width: 1200px) {
     &__prod-list {
-
       &--list {
         grid-template-columns: repeat(1, 1fr);
       }
@@ -474,10 +420,10 @@
     }
   }
 
-  @media (max-width: 992px) {}
+  @media (max-width: 992px) {
+  }
 
   @media (max-width: 768px) {
-
     &__filters {
       position: absolute;
       left: 0;
@@ -494,13 +440,11 @@
       &--active {
         transform: translateY(0);
       }
-
     }
 
-    &__inner{
+    &__inner {
       justify-content: center;
     }
-
   }
 
   @media (max-width: 576px) {
@@ -514,7 +458,5 @@
     &__filters {
       height: 55vh;
     }
-
   }
-
 }
