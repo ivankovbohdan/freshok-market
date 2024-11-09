@@ -1,5 +1,5 @@
 const { src, dest, watch, parallel, series } = require("gulp");
-const ghPages = require("gulp-gh-pages"); // Додавання плагіну для деплою на GitHub Pages
+const ghPages = require("gulp-gh-pages");
 
 const scss = require("gulp-sass")(require("sass"));
 const concat = require("gulp-concat");
@@ -89,6 +89,10 @@ function svgSprites() {
     .pipe(dest("app/images"));
 }
 
+function fonts() {
+  return src("app/fonts/**/*").pipe(dest("dist/fonts"));
+}
+
 function build() {
   return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js"], {
     base: "app",
@@ -119,9 +123,8 @@ function watching() {
   // watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
-// Додаємо нову задачу для деплою
 function deploy() {
-  return src("dist/**/*").pipe(ghPages()); // Відправляє файли в GitHub Pages
+  return src("dist/**/*").pipe(ghPages());
 }
 
 exports.styles = styles;
@@ -132,9 +135,10 @@ exports.images = images;
 exports.svgSprites = svgSprites;
 exports.cleanDist = cleanDist;
 exports.htmlInclude = htmlInclude;
-exports.build = series(cleanDist, images, build);
+exports.fonts = fonts;
+exports.build = series(cleanDist, images, fonts, build);
 
-exports.deploy = deploy; // Додаємо задачу деплою
+exports.deploy = deploy;
 
 exports.default = parallel(
   svgSprites,
