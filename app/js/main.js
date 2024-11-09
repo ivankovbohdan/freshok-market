@@ -64,6 +64,7 @@ $(function () {
   overlay.on("click", function () {
     overlay.hide();
     catalogList.removeClass("catalog__list--active");
+    catalogList.removeClass("catalog__list--active-side");
     catalogFiltersSide.removeClass("catalog__filters--active");
     catalogBtn.removeClass("catalog__btn--active");
     catalogCloseBtn.removeClass("close-btn");
@@ -123,6 +124,7 @@ $(function () {
     e.preventDefault();
     catalogBtn.removeClass("catalog__btn--active");
     catalogList.removeClass("catalog__list--active");
+    catalogList.removeClass("catalog__list--active-side");
     catalogLinks.removeClass("catalog__link--active");
     $(this).addClass("catalog__link--active");
   });
