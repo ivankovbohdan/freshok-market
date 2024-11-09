@@ -67,6 +67,7 @@ $(function () {
     catalogFiltersSide.removeClass("catalog__filters--active");
     catalogBtn.removeClass("catalog__btn--active");
     catalogCloseBtn.removeClass("close-btn");
+    fav.removeClass("favorites--active");
     basket.removeClass("basket--active");
     sideMenu.removeClass("side-menu--active");
     body.removeClass("body--fixed");
@@ -120,6 +121,8 @@ $(function () {
 
   catalogLinks.on("click", function (e) {
     e.preventDefault();
+    catalogBtn.removeClass("catalog__btn--active");
+    catalogList.removeClass("catalog__list--active");
     catalogLinks.removeClass("catalog__link--active");
     $(this).addClass("catalog__link--active");
   });
